@@ -1,0 +1,115 @@
+    body{
+    font-family: "montserrat-medium", sans-serif;
+    width: 100%;
+    overflow-x:hidden ;
+    }
+    .landing-pg{
+        height: 100vh;
+    }
+    .bg img{
+        height: 100vh;
+    }
+    .logo{
+        width: 13rem;
+        height: 13rem;
+        margin-left: 0;
+    }
+    .head{
+        top: 10px;
+    }
+    .paar{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+        margin-top: 2rem;
+    }
+    .paar h1{
+        font-size:2.4rem;
+        width: 80%;
+        position: relative;
+        text-align: center;
+    }
+    .paar p,.paar h1{
+        margin: 0;
+        position: relative;
+    }
+    .paar p{
+        font-size: .7rem;
+        text-align: center;
+    }
+    .btn button{
+        width: 100%;
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
+    .btn{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        position: relative;
+        z-index:100;
+    }
+    #list{
+        position: fixed;
+        z-index: 1000;
+        visibility: visible;
+    }
+    .about h1{
+        font-size: 2.4rem;
+    }
+    .about p{
+        font-size: 1rem;
+        width: 80%;
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .text p{
+        font-size: 1rem;
+    }
+    .text{
+        padding: 0 2rem;
+    }
+    .center{
+        width: 100%;
+    }
+    .first{
+        font-size: .8rem;
+    }
+    .second{
+        font-size: .8rem;
+    }
+    .owners{
+        width: 93%;
+    }
+    .text h1{
+        font-size: 2.2rem;
+        width: 100%;
+    }
+    .left,.right{
+        font-size: 1rem;
+    }
+    .contact-status h1{
+        font-size: 2rem;
+        padding: 0 3rem;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .whatsapp{
+        width: 200px;
+    }
+    .link{
+        font-size: 1rem;
+    }
+    .gmail{
+        padding:10px 10px;
+        margin-top: 40px;
+        text-align: center;
+        font-size: .8rem;
+        width: 200px;
+    }
