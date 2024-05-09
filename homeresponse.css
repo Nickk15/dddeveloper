@@ -1,7 +1,7 @@
+/* @media only screen and (max-width: 468px) { */
     body{
     font-family: "montserrat-medium", sans-serif;
-    width: 100%;
-    overflow-x:hidden ;
+    overflow-x: hidden;
     }
     .landing-pg{
         height: 100vh;
@@ -26,7 +26,7 @@
         margin-top: 2rem;
     }
     .paar h1{
-        font-size:2.4rem;
+        font-size:1.6rem;
         width: 80%;
         position: relative;
         text-align: center;
@@ -75,7 +75,7 @@
         padding: 0 2rem;
     }
     .center{
-        width: 100%;
+        width: 75%;
     }
     .first{
         font-size: .8rem;
@@ -84,7 +84,7 @@
         font-size: .8rem;
     }
     .owners{
-        width: 93%;
+        width: 92%;
     }
     .text h1{
         font-size: 2.2rem;
@@ -104,7 +104,7 @@
         width: 200px;
     }
     .link{
-        font-size: 1rem;
+        font-size: .8rem;
     }
     .gmail{
         padding:10px 10px;
@@ -113,3 +113,4 @@
         font-size: .8rem;
         width: 200px;
     }
+  }
