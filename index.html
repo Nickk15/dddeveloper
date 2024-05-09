@@ -141,7 +141,6 @@
             <div class="first">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur impedit, hic repellendus dolore
                     expedita debitis vitae quam. nick
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ab aut sed quisquam. Aspernatur
                     autem incidunt sequi cum distinctio, animi optio! Impedit at molestiae aspernatur iusto quibusdam
                     quo est architecto.
                 </p>
@@ -167,6 +166,11 @@
                     <p class="name">Nikhil Pandey</p>
                 </div>
             </div>
+            <div class="slide">
+                <i id="slidecount1" class="bi bi-circle"></i>
+                <i id="slidecount2" class="bi bi-circle"></i>
+            </div>
+
         </div>
         <div class="right" onclick="left()">
             <i class="bi bi-arrow-right"></i>
@@ -213,9 +217,15 @@
     <script>
         let nav = document.getElementById('list')
         let toggles = document.getElementById('toggle')
-        let first = document.getElementsByClassName('first')[0]
         let second = document.getElementsByClassName('second')[0]
+        let slide1 = document.getElementById('slidecount1')
+        let slide2 = document.getElementById('slidecount2')
+        let first = document.getElementsByClassName('first')[0]
         // Define the close() function
+        // if (getComputedStyle(first).display === 'flex') {
+        //     slide1.style.backgroundColor="black"
+        //     }
+
         const closeNav = () => {
             nav.style.transform = "translateX(110%)";
             toggles.style.display = "flex"
@@ -232,17 +242,20 @@
                 first.style.transform = "translateX(-100%)"
             }
             setTimeout(() => {
+                slide1.style.backgroundColor = "transparent"
+                slide2.style.backgroundColor = "black"
                 if (first.style.display == "flex") {
                     first.style.display = "none"
                     second.style.display = "flex"
                     second.style.transform = "translateX(0%)"
+
                 }
                 else {
                     second.style.display = "flex"
                     first.style.display = "none"
                 }
 
-            }, 1000)
+            }, 500)
 
         }
         const right = () => {
@@ -253,6 +266,8 @@
                 second.style.transform = "translateX(100%)"
             }
             setTimeout(() => {
+                slide2.style.backgroundColor = "transparent"
+                slide1.style.backgroundColor = "black"
                 if (second.style.display == "flex") {
                     first.style.display = "flex"
                     second.style.display = "none"
@@ -262,13 +277,13 @@
                     first.style.display = "flex"
                     second.style.display = "none"
                 }
-            }, 1000)
+            }, 500)
         }
-        let loader=document.getElementById('preloader')
-        window.addEventListener('load',function(){
-            setInterval(()=>{
-                loader.style.display="none"
-            },2000)
+        let loader = document.getElementById('preloader')
+        window.addEventListener('load', function () {
+            setInterval(() => {
+                loader.style.display = "none"
+            }, 2000)
         })
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
