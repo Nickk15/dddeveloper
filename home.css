@@ -226,7 +226,20 @@ ul .toggle{
     text-align: center;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     display: flex;
+}
+.bi-circle{
+    border-radius: 100% !important;
+}
+#slidecount1{
+    background-color: black;
+
+}
+.slide{
+    margin-top: 5rem;
+    display: flex;
+    gap: 1rem;
 }
 .second p,.first p{
     word-spacing: .5rem;
